@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Ubuntu;
+}
+.navbar {
+    width: 100%;
+    height: 243px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 360px;
+    gap: 34px;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    width: 670px;
+    height: 28px;
+    gap: 25px;
+    justify-content: space-evenly;
+    list-style: none;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+    color: rgba(149, 117, 84, 1);
+}
+i {
+    font-size: 20px;
+    font-weight: 100;
+    color: rgba(223, 170, 91, 1);
+}
+.filter {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 310px;
+    background-color: rgba(17, 17, 17, 1);
+}
+.filter button {
+    display: flex;
+    width: 192px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22.98px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}
+.filter .check {
+    background-color: rgba(223, 170, 91, 1);
+    color: white;
+}
+header {
+    width: 100%;
+    height: 790px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/hDbCjHNdF48.png);
+    background-size: cover;
+    color: white;
+    gap: 41px;
+    padding-top: 170px;
+    position: relative;
+}
+h1 {
+    font-family: Ubuntu;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 91.92px;
+    text-align: left;
+}
+header p {
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+    text-align: left;
+}
+header .btn {
+    background-color: rgba(223, 170, 91, 1);
+    color: white;
+    width: 371px;
+    height: 76px;
+    border-radius: 10px;
+    border: none;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+}
+.facilites {
+    width: 1319px;
+    height: 171px;
+    color: rgba(149, 117, 84, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    position: absolute;
+    bottom: -30px;
+}
+.icons {
+    width: 1319px;
+    height: 147px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 200px 50px 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.icon-item {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    gap: 150px;
+    top: -10px;
+}
+.icon-item p {
+    color: #957554;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Container for custom select */
+.custom-select {
+    position: relative;
+    display: flex;
+    width: 200px; /* Adjust as needed */
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+    background-color: white;
+    width: 192px;
+    height: 60px;
+    font-family: Ubuntu;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22.98px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-select::after {
+    content: "";
+    background: url("./images/vector.svg") no-repeat center center;
+    font-size: 14px;
+    position: absolute;
+
+    right: 25px;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    cursor: pointer;
+    transition: transform 0.5s ease; /* Smooth rotation */
+    pointer-events: none;
+}
+
+.custom-select:focus-within::after {
+    transform: translateY(-100%) rotate(180deg); /* Rotate 180 degrees */
+}
+.room__cards {
+    margin-top: 43px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 43px;
+}
+.room__name {
+    font-family: Ubuntu;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 51.71px;
+    text-align: center;
+    width: 312px;
+    height: 52px;
+    color: rgba(149, 117, 84, 1);
+}
+.cards {
+    width: 1320px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.card1 {
+    width: 630px;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(./images/FqqiAvJejto.png);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+    padding-top: 220px;
+}
+.card2 {
+    width: 630px;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(./images/GqbU78bdJFM.png);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+    padding-top: 220px;
+}
+.card3 {
+    width: 630px;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(./images/w1RE0lBbREo.png);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+    padding-top: 220px;
+}
+
+.card4 {
+    width: 630px;
+    height: 500px;
+    border-radius: 10px;
+    background-image: url(./images/aRT5UCf2MYY.png);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 34px;
+    align-items: center;
+    padding-top: 220px;
+}
+.cards h3 {
+    width: 381px;
+    height: 46px;
+    font-family: Ubuntu;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 45.96px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+.get__name {
+    width: 411px;
+    height: 52px;
+    font-family: Ubuntu;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 51.71px;
+    text-align: center;
+    color: rgba(149, 117, 84, 1);
+    margin-top: 80px;
+}
+.rates {
+    width: 244px;
+    height: 76px;
+    border-radius: 10px;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+    text-align: center;
+    border: none;
+    background-color: rgba(223, 170, 91, 1);
+    color: white;
+}
+.get__book--btn {
+    width: 418px;
+    height: 76px;
+    border-radius: 10px;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(223, 170, 91, 1);
+    border: none;
+}
+footer {
+    margin-top: 100px;
+    background-color: rgba(17, 17, 17, 1);
+    height: 469px;
+    padding: 61px 60px 130px 60px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 200px;
+}
+.foter__logo {
+    display: flex;
+    flex-direction: column;
+}
+.foter__logo img {
+    width: 154px;
+    height: 126px;
+    margin-bottom: 70px;
+}
+.foter__logo p {
+    width: 263px;
+    height: 83px;
+    color: white;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 300;
+
+    text-align: left;
+}
+.foter__list {
+    width: 194px;
+    height: 249px;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27.58px;
+    text-align: left;
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+.offer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.offer h4 {
+    width: 268px;
+    height: 34px;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34.47px;
+    text-align: left;
+    color: white;
+}
+.email-btn {
+    width: 371px;
+    height: 75px;
+    border-radius: 10px;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 27.58px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 27px;
+    border: none;
+}
+.subs-btn {
+    width: 371px;
+    height: 75px;
+    border-radius: 10px;
+    font-family: Ubuntu;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(223, 170, 91, 1);
+    border: none;
+}
